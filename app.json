@@ -1,12 +1,11 @@
 {
   "expo": {
-    "name": "FA",
-    "slug": "FA",
+    "name": "Place_app",
+    "slug": "Place_app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "backgroundColor": "#1e085a",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -26,6 +25,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your camera in order to take photos of your favorite places."
+        }
+      ]
+    ]
+    
   }
 }
